@@ -1,0 +1,254 @@
+    body {
+    font-family: "Nunito", sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    }
+
+    header {
+    background-color: #1b6ca8;
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .logo {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 50px;
+    color: #ffd166;
+    }
+
+    .topnav {
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+    }
+
+    .topnav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    }
+
+    .topnav a:hover {
+    color: #ff9f1c;
+    }
+    .preview{
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff8ec;
+    color: #1b6ca8;
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+    .preview-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #06d6a0;
+    padding: 12px 20px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    }
+
+    .preview-btn:hover {
+    background-color: #ff9f1c;
+    }
+
+    .preview h2 {
+    font-size: 42px;
+    font-family: "Playfair Display", serif;
+    color: #ffd166;
+    margin-bottom: 12px;
+    }
+
+    .preview p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #ffd166;
+    }
+
+
+    .section-title {
+    font-family: "Playfair Display", serif;
+    color: #1b6ca8;
+    text-align: center;
+    font-size: 32px;
+    margin: 30px 0 20px;
+    }
+
+    .highlight-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    }
+
+    .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    }
+
+    .highlight-card {
+    background-color: #e4f8f0;
+    border: 2px solid #06d6a0;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    transition: 0.25s ease;
+    }
+
+    .highlight-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff9f1c;
+    }
+
+    .highlight-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+
+    .highlight-card h3 {
+    color: #ff9f1c;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin: 12px 12px 4px;
+    }
+
+    .highlight-card p {
+    margin: 0 12px 12px;
+    }
+
+    .about-section {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff8ec;
+    border: 2px solid #ffd166;
+    border-radius: 10px;
+    padding: 0px 20px 40px;
+    }
+
+    .about-section p {
+    font-size: 17px;
+    }
+
+    .explore-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    }
+
+    .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    }
+
+    .explore-card {
+    background-color: #fff;
+    border: 2px solid #1b6ca8;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.25s ease;
+    }
+
+    .explore-card:hover {
+    transform: translateY(-6px);
+    border-color: #ff9f1c;
+    }
+
+    .explore-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    }
+
+    .explore-card h3 {
+    color: #1b6ca8;
+    font-family: "Playfair Display", serif;
+    margin: 12px;
+    font-size: 22px;
+    }
+
+    .explore-card p {
+    margin: 0 12px 16px;
+    font-size: 15px;
+    }
+
+    .event-section {
+    max-width: 900px;
+        margin: 20px auto;
+    padding: 20px;
+    }
+
+    .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    }
+
+    .event-item {
+    background-color: #fff8ec;
+    border: 2px solid #ffd166;
+    border-radius: 10px;
+    padding: 18px;
+    }
+
+    .event-item h3 {
+    margin: 0;
+    color: #ff9f1c;
+    font-family: "Playfair Display", serif;
+    }
+
+    .event-item p {
+    margin: 6px 0 0;
+    }
+
+    footer {
+    background-color: #1b6ca8;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+    header {
+    align-items: flex-start;
+    }
+    .logo {
+    font-size: 38px;
+    }
+
+    .topnav {
+    flex-wrap: wrap;
+    gap: 14px;
+    }
+
+    .preview h2 {
+    font-size: 34px;
+    }
+    }
+@media (max-width: 500px) {
+    .authors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .author-card img {
+        width: 110px;
+        height: 110px;
+    }
+}

@@ -1,0 +1,131 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1b6ca8;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #ffd166;
+  letter-spacing: 1px;
+}
+
+.topnav {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.topnav a:hover {
+  color: #ff9f1c;
+}
+
+.attractions {
+  max-width: 1140px;
+  margin: 24px auto 32px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.attraction {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.attraction.orange {
+  background-color: #fff8ec;
+  border: 2px solid #ff9f1c;
+}
+
+.attraction.green {
+  background-color: #e4f8f0;
+  border: 2px solid #06d6a0;
+}
+
+.attraction.reverse {
+  flex-direction: row-reverse;
+}
+
+.attraction-image {
+  flex: 1;
+}
+
+.attraction-image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.attraction-text {
+  flex: 1;
+}
+
+.attraction-text h2 {
+  margin: 0 0 8px;
+  font-family: "Playfair Display", serif;
+  color: #1b6ca8;
+  font-size: 26px;
+}
+
+.attraction-text p {
+  margin: 4px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #1b6ca8;
+  color: white;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  header {
+    align-items: flex-start;
+  }
+
+  .topnav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .attraction{
+    flex-direction: column;
+  }
+  .attraction.reverse {
+    flex-direction: column;
+  }
+
+  .attraction-image img {
+    height: 220px;
+  }
+}
